@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    background-image: url('book.jpg');
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+header input {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1em;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #7b91a2;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.book-item {
+    color: #eeecec;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(203, 193, 193, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(192, 177, 177, 0.2);
+}
+
+.book-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.book-item h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.book-details {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff; 
+}
+
+.book-details.hidden {
+    display: none;
+}
+
+.book-cover img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book-info {
+    flex-grow: 1;
+}
+
+.book-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.book-details p#bookSummary {
+    color: #ffffff; 
+}
+
+#backButton, #readMoreButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7f87a7;
+    color: #040305;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #c4c4d0;
+}
+
+

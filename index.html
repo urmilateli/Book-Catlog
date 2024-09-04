@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Catalog</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for books...">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="bookList" class="book-list"></div>
+        <div id="bookDetails" class="book-details hidden">
+            <div class="book-cover">
+                <img id="bookCoverImage" src="" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <h2 id="bookTitle"></h2>
+                <p><strong>Author:</strong> <span id="bookAuthor"></span></p>
+                <p><strong>Published Date:</strong> <span id="publishedDate"></span></p>
+                <p><strong>Publisher:</strong> <span id="publisher"></span></p>
+                <p><strong>Summary:</strong></p>
+                <p id="bookSummary"></p>
+                <button id="backButton">Back</button>
+                <button id="readMoreButton">Read this book</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
